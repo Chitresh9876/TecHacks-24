@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.heroSection{
+background-color: #94bbd8;
+height: 66vh;
+width: 100vw;
+overflow-y:hidden;
+display: flex;
+
+}
+
+.HeroImage{
+height: 30rem;
+width: 30rem;
+}
+
+.heroSectionDetail{
+    width: calc(100vw - 40rem);
+}
+
+.right-incline{
+    height: 5rem;
+    width: 100vw;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,0 50%);
+    background-color: #94bbd8;
+    position: absolute;
+    z-index: 2;
+}
+.left-incline{
+    position: relative;
+    height: 5rem;
+    width: 100vw;
+    clip-path: polygon(0 0, 100% 0, 100% 50%,0 100%);
+    background-color: #3d81be;
+}
