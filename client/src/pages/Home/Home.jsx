@@ -6,6 +6,8 @@ import { Button } from "@mui/material";
 import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
+  
+
   return (
     <div>
       {/* Hero Section */}
@@ -40,7 +42,7 @@ const Home = () => {
       {/* Footer */}
 
       <Footer />
-    </div>
+ </div>
   );
 };
 
