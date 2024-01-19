@@ -38,7 +38,6 @@ const Home = () => {
       <ImageDescription />
 
       {/* Footer */}
-
       <Footer />
     </div>
   );
