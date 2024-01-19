@@ -24,7 +24,7 @@ width: 30rem;
 
 .right-incline{
     height: 5rem;
-    width: 100vw;
+    width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 100%,0 50%);
     background-color: #94bbd8;
     position: absolute;
