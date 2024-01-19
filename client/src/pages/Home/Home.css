@@ -20,9 +20,17 @@ width: 30rem;
 
 .heroSectionDetail{
     width: calc(100vw - 40rem);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: x-large;
 }
 
 .right-incline{
+    margin-top: -1px;
     height: 5rem;
     width: 100vw;
     clip-path: polygon(0 0, 100% 0, 100% 100%,0 50%);
@@ -35,5 +43,5 @@ width: 30rem;
     height: 5rem;
     width: 100vw;
     clip-path: polygon(0 0, 100% 0, 100% 50%,0 100%);
-    background-color: #3d81be;
+    background-color: #484bf2;
 }
