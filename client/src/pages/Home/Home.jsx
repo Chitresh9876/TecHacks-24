@@ -32,7 +32,7 @@ const Home = () => {
             }}
           >
             <Link
-              to="/sign-up"
+              to="/user/sign-up"
               style={{ textDecoration: "none", ".hover": { color: "white" } }}
             >
               {" "}
