@@ -54,10 +54,16 @@ const Footer = () => {
             {" "}
             Follow us
           </Typography>
-          <Stack height="50%" direction={"row"}  justifyContent={"center"} alignItems={"center"} spacing=".6rem">
+          <Stack
+            height="50%"
+            direction={"row"}
+            justifyContent={"center"}
+            alignItems={"center"}
+            spacing=".6rem"
+          >
             <FaFacebook color="white" size={""} />
             <FaLinkedinIn color="white" />
-            <FaInstagram color="white"/>
+            <FaInstagram color="white" />
           </Stack>
         </Stack>
         <Stack alignItems={"center"} style={{ width: "100%", height: "100%" }}>
@@ -65,9 +71,16 @@ const Footer = () => {
             {" "}
             Address
           </Typography>
-          <Stack alignItems={"center"} justifyContent={"center"} color={"white"}  width={"100%"} height={"57%"}>
+          <Stack
+            alignItems={"center"}
+            justifyContent={"center"}
+            color={"white"}
+            width={"100%"}
+            height={"57%"}
+          >
             <Typography fontFamily={"sans-serif"}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt maiores maxime laudantium rerum!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+              maiores maxime laudantium rerum!
             </Typography>
           </Stack>
         </Stack>
