@@ -7,7 +7,7 @@
 
 .container{
   padding: 0.5rem;
-  width: 30rem;
+  width: 25rem;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.2);
   height: 3rem;
@@ -23,6 +23,7 @@
 .container li{
   list-style: none;
   display: inline;
+  padding:0 .4rem 0 .4rem;
 }
 .container li a{
   text-decoration: none;

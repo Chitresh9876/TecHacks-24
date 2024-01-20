@@ -6,7 +6,10 @@ import Monitoring from "./pages/Monitoring/Monitoring";
 import Resource from "./pages/Resources/Resource";
 import WaterQualityIndex from "./pages/WaterQualityIndex/WaterQualityIndex";
 import { Route, Routes } from "react-router-dom";
-
+import Footer from "./components/Footer/Footer";
+import Error from "./components/Error/Error";
+import SignUp from "./components/SignUp/SignUp"
+import Login from "./components/Login/Login"
 function App() {
   return (
     <div className="App">
@@ -16,9 +19,12 @@ function App() {
         <Route exact path='/' element={<Home/>}/>
         <Route exact path='/airQualityIndex' element={<AirQualityIndex/>}/>
         <Route exact path='/waterQualityIndex' element={<WaterQualityIndex/>}/>
-        <Route exact path='/monitoring' element={<Monitoring/>}/>
+        {/* <Route exact path='/monitoring' element={<Monitoring/>}/> */}
         <Route exact path='/resource' element={<Resource/>}/>
+        <Route exact path="/sign-up" element={<SignUp/>}/>
+        <Route exact path="*" element={<Error/>}/>
       </Routes>
+      <Footer/>
     </div>
   );
 }

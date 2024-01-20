@@ -1,13 +1,11 @@
 import React from "react";
 import "./Home.css";
 import HeroImage from "../../images/HeroImage.jpg";
+import { Link } from "react-router-dom";
 import ImageDescription from "../../components/ImageDescription/ImageDescription";
 import { Button } from "@mui/material";
-import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
-  
-
   return (
     <div>
       {/* Hero Section */}
@@ -24,10 +22,22 @@ const Home = () => {
             sx={{
               backgroundColor: "#ffffff",
               borderColor: "#ffffff",
-              ":hover": { color: "blue" },
+              boxShadow: "3px 4px 8px #000",
+              ":hover": {
+                color: "white",
+                outline: "none",
+                boxShadow: "1px 2px 8px #000000",
+                backgroundColor: "",
+              },
             }}
           >
-            Sign Up
+            <Link
+              to="/sign-up"
+              style={{ textDecoration: "none", ".hover": { color: "white" } }}
+            >
+              {" "}
+              Sign Up
+            </Link>
           </Button>
         </div>
         <img src={HeroImage} alt="" className="HeroImage" />
@@ -38,11 +48,7 @@ const Home = () => {
       {/* Body*/}
 
       <ImageDescription />
-
-      {/* Footer */}
-
-      <Footer />
- </div>
+    </div>
   );
 };
 
