@@ -2,7 +2,7 @@ import mongoose from "mongoose"
 
 
 const DBConnection = async() => {
-    const DB_URL = 'mongodb://127.0.0.1:27017';
+    const DB_URL = `mongodb+srv://chitreshgupta9876:Annugupta@cluster0.gxjh460.mongodb.net/?retryWrites=true&w=majority`;
     await mongoose.connect(DB_URL)
     .then((res)=>{
         console.log('DataBase Connected')

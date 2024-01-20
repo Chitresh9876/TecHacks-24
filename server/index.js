@@ -1,6 +1,6 @@
 import express from 'express';
 import cros from 'cors';
-import router from './routes/routes.js'
+import authRouter from './routes/authRouter.js';
 import DBConnection from './database/db.js';
 
 
@@ -10,8 +10,9 @@ const app = express();
 
 const PORT = 8000;
 app.use(cros());
+app.use(express.json());
 
-app.use('/', router);
+app.use('/auth', authRouter);
 
 //start server
 DBConnection();
