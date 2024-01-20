@@ -12,6 +12,7 @@ const AqiApi = () => {
           `https://api.weatherbit.io/v2.0/current/airquality?lat=${lat}&lon=${lon}&key=78f3c77d4b214b2594422492daaff915`
         );
         setData(response);
+        console.log(response);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
