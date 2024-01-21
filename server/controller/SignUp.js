@@ -5,10 +5,10 @@ const SignUp = async(req, res) => {
 console.log("Request Body --> ",req.body)
 const {name, email, password, phoneNo} = req.body;
 const newUser = new SignUpModal({
-    name,
-    email,
-    password,
-    phoneNo
+    name:name,
+    email:email,
+    password:password,
+    phoneNo:phoneNo,
 })
 
 newUser.save()
